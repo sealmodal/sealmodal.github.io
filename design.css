@@ -1,0 +1,73 @@
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(71, 54, 50);
+}
+
+.navbar{
+    text-align: center;
+    word-spacing: 50%;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: solid;
+    border-width: 1px;
+    word-spacing: 50px;
+    background-color: rgb(214, 233, 161);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(71, 54, 50);
+}
+
+a:hover {
+    color: rgb(88, 129, 34);
+}
+
+.sched{
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+}
+
+th{
+    padding-bottom: 1%;
+}
+
+td {
+    width: 15%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(71, 54, 50);
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 1%;
+}
+
+#title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#days {
+    text-align: center;
+    background-color: rgb(255, 224, 230);
+    font-weight: bold;
+}
+
+.name {
+    text-align: center;
+}
+
+#namee {
+    font-size: 15px;
+    color: rgb(100, 88, 85);
+}
+
+.content {
+    padding: 1%;
+}
+
+h1{
+    font-size: 50px;
+}
