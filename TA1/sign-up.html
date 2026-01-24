@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="resource/registration.css">
+    <link href='https://fonts.googleapis.com/css?family=McLaren' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <header class="header header-container">
+            <div class="header-left">
+                <a href="#"><img src="images/company-logo.png" alt="Company Logo" class="logo"></a>
+                <p class="company-name">Mon's Atelier</p>
+            </div>
+            <div class="header-right">
+                <a href="login.html">Login</a>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="registration-form">
+                <h2>Sign-Up</h2>
+                    <form name="myForm" method="post" action="login.html">
+                        <input type="text" class="form-item fname" name="FName" placeholder="First Name" required><br>
+                        <input type="text" class="form-item lname" name="LName" placeholder="Last Name" required><br>
+                        <input type="text" class="form-item email" name="Email" placeholder="Email" required><br>
+                        <input type="password" class="form-item pass" name="Password" placeholder="Password" required>
+                        <input type="password" class="form-item cpass" name="Password" placeholder="Confirm Password" required>
+                        <input type="text" class="form-item num" name="Mobile Number" placeholder="Mobile Number" required><br>
+                        <input type="text" class="form-item add" name="Address" placeholder="Address" required><br>
+                        <input type="submit" value="Submit" class="button">
+                    </form>
+                <p>Already have an account? <a href="login.html">Log-In</a>.</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
