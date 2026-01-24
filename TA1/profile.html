@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>About</title>
     <link rel="stylesheet" href="resource/style.css">
     <link href='https://fonts.googleapis.com/css?family=McLaren' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
@@ -26,22 +26,28 @@
         <nav class="sidebar left">
             <ul>
                 <li><a href="index.html" class="nav-inactive">Home</a></li>
-                <li><a href="profile.html" class="nav-inactive">Profile</a></li>
-                <li><a href="about.html" class="nav-active">About</a></li>
+                <li><a href="profile.html" class="nav-active">Profile</a></li>
+                <li><a href="about.html" class="nav-inactive">About</a></li>
                 <li><a href="contact.html" class="nav-inactive">Contact</a></li>
             </ul>
         </nav>
 
-        <main class="main contact-main">
-            <div class="contact-box">
-                <h3>Contact Form</h3>
-                    <form id="contact">
-                        <input type="text" class="form-item" id="name" name="Name" placeholder="Name"><br>
-                        <textarea class="form-item" id="message" name="Message" placeholder="Message here..."></textarea>
-                        <button type="submit" class="button">Submit</button>
-                    </form>
-                <p id="response"></p>
-            </div>
+        <main class="contents profile-content ">
+            <p>
+                <div class="about-content profile-box">
+                        <div class="about-img">
+                            <img src="images/about-user.jpg"  alt="User Profile">
+                        </div>
+                        <div class="about-desc">
+                            <h3>User Profile</h3><br>
+                            <b>Name</b>: Kaelix Debonair<br>
+                            <b>Username</b>: Debonemaru<br>
+                            <b>Email</b>: kaechan@niji.co<br>
+                            <b>Birthday</b>: November 5<br>
+                            <b>Location</b>: America<br>
+                        </div>
+                </div>
+            </p>
         </main>
 
         <footer class="footer footer-container">
@@ -50,12 +56,11 @@
                 <p>© shnnamons 2026<br>Email Us: contact@shnnamons.co</p>
             </div>
             <div class="f-right">
-                <p>Photos used belong to their rightful owners.</p>
+                <p>Photos used belong to their rightful owners.<br>Check the browser console for output.</p>
             </div>
         </footer>
-
     </div>
-    
-    <script src="resource/form.js"></script>
+
+    <script src="resource/optionalchaining.js"></script>
 </body>
 </html>
