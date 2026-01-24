@@ -1,0 +1,167 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', Verdana, Arial, sans-serif;
+    color: #5d4038
+}
+
+/* MOBILE FIRST (DEFAULT) */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main";
+    grid-template-rows: 100px 1fr;
+    min-height: 100vh;
+}
+
+/* SECTIONS */
+.header {
+    grid-area: header;
+    background-color: #dcf7a1;
+    font-family: 'McLaren';
+    height: 100;
+    border-bottom: 3px dashed #5d4038;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+    text-align: center;
+    background-image: radial-gradient(#ffd6d6 5%, transparent 5%),
+     radial-gradient(#ffd6d6 5%, transparent 5%);
+    background-color: #FFFEF6;
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    width: 100%;
+}
+
+/* HEADER */
+
+.header-container {
+    display: grid;
+    grid-template-areas:
+        "header-left header-right";
+    grid-template-columns: 3fr 1fr;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.header-left p {   
+    font-weight: bold;
+    font-size: clamp(25px, 2vw, 2vw);
+}
+
+.header-right {
+    text-align: right;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.header-right a{
+    text-decoration: none;
+    font-size: clamp(15px, 1vw, 1vw);
+    color: #5d4038;
+}
+
+.header-right a:hover {
+    color: #4c802a;
+}
+
+.logo {
+    max-height: 5rem;
+    padding-right: 1rem;
+}
+
+/* FORM */
+
+h2 {
+    font-family: 'McLaren';
+}
+
+.registration-form {
+    box-sizing: border-box;
+	background-color: #fff;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 4%;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+form  {
+    min-height: 50vh;
+    min-width: 15px;
+    max-width: 100%;
+    padding: 3%;
+    border-radius: 30px;
+}
+
+.form-item{
+    border: 1px solid #ced4da;;
+    color: gray;
+    font-size: 15px;
+	border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 3%;
+    width: 50%;
+}
+
+.button{
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffd6d6;
+    border: 1px solid #5d4038;
+    color: #5d4038;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ffeaea;
+}
+
+.registration-form a{
+    color: #8d6755;
+}
+
+.registration-form a:hover{
+    color: #4c802a;
+}
+
+/* TABLET & UP */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}
+
+/* DESKTOP & UP */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}
