@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="resource/style.css">
+    <link href='https://fonts.googleapis.com/css?family=McLaren' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <header class="header header-container">
+            <div class="header-left">
+                <a href="index.html"><img src="images/company-logo.png" alt="Company Logo" class="logo"></a>
+                <p class="company-name">Mon's Atelier</p>
+            </div>
+            <div class="header-right">
+                <a href="login.html">Login</a>
+            </div>
+        </header>
+
+        <nav class="sidebar left">
+            <ul>
+                <li><a href="products.html" class="nav-inactive">Back to Products</a></li>
+                <li><a href="payment.html" class="nav-active">Payment</a></li>
+            </ul>
+        </nav>
+
+        <main class="main contact-main">
+            <div class="contact-box">
+                <h3>Payment Form</h3>
+                    <form id="contact">
+                        <input type="text" class="form-item fname" name="FName" placeholder="First Name" required><br>
+                        <input type="text" class="form-item lname" name="LName" placeholder="Last Name" required><br>
+                        <input type="text" class="form-item email" name="Email" placeholder="Email" required><br>
+                        <input type="text" class="form-item num" name="Mobile Number" placeholder="Mobile Number" required><br>
+                        <input type="text" class="form-item add" name="Address" placeholder="Address" required><br>
+                        <textarea class="form-item" id="message" name="Message" placeholder="Message here..."></textarea><br>
+                        <select id="fruits" name="fruits">
+                            <option value="COD">Cash on Delivery</option>
+                            <option value="GCash">GCash</option>
+                            <option value="Paypal">PayPal</option>
+                        </select>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                <p id="response"></p>
+            </div>
+        </main>
+
+        <footer class="footer footer-container">
+            <div class="f-left">
+                <a href="index.html"><img src="images/company-logo.png" alt="Company Logo" class="logo"></a>
+                <p>© shnnamons 2026<br>Email Us: contact@shnnamons.co</p>
+            </div>
+            <div class="f-right">
+                <p>Photos used belong to their rightful owners.</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
